@@ -21,4 +21,25 @@
      <scope>compile</scope>
 </dependency>
   </dependencies>
+  <build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jar-plugin</artifactId>
+			<version>2.6</version>
+			<configuration>
+<!--Pluging configuration -->
+			 <archive>
+				<manifest>
+					<!-- Jar file entry point -->
+					<mainClass>${project.groupId}.MisMatematicas</mainClass>
+				</manifest>
+			  </archive>
+			</configuration>
+		</plugin>
+  		<!-- Make this jar executable -->
+		
+	</plugins>
+	
+  </build>
 </project>
